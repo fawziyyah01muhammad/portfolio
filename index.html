@@ -1,55 +1,882 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>nav bar</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project</title>
+  <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="assets/fonts/flat-icon/flaticon.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<nav>
-		<input type="checkbox" id="check">
-		<label for="check" class="checkbtn">
-		<i class="fas fa-bars"></i>	
-		</label>
-		<label class="logo"><a href="menu.html"><span style="color: black">P</span><span style="color: tomato"><b>.folio</b></span></a></label>
-		<ul>
-		<li><a class="active" href="index.html"><b>Home</b></a></li>
-	    <li><a href="work 4.html"><b>About</b></a></li>
-	    <li><a href="service.html"><b>Service</b></a></li>
-	    <li><a href="register.html"><b>Register</b></a></li>
-	    <li><a href="login.html"><b>Log in</b></a></li>
-	    <li><a href="address.html"><b>Contact<b></a></li>
-			<i class="fas fa-bars"></i>
+<div id="content-wrapper">
+  <header class="header header--bg">
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="#"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SKILL</a></li> 
+            <li><a href="#">PORTFOLIO</a></li> 
+            <li><a href="#">TEAM</a></li> 
+            <li><a href="#">BLOG</a></li> 
+            <li><a href="#">CONTACT</a></li> 
+          </ul>
+        </div>
+      </nav>
+      <div class="header__content text-center">
+        <span class="header__content__block">HELLO</span>
+        <h1 class="header__content__title">I'M FAWZIYYAH MUHAMMAD</h1>
+        <ul class="header__content__sub-title">
+          <li>WRITER<span class="padding">&#45;</span></li>
+          <li>WEB DEVELOPER <span class="padding">&#45;</span></li>
+          <li>CATERER</li>
+        </ul>
+        <a class="header__button" href="#">HAVE PROJECT? LET'S TALK</a>
+      </div>
+      <div class="social-icon pull-right">
+        <ul>
+          <li><a href="https://facebook.com/fawziyyah.muhammad.5/"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <!-- <li><a href="https://fauziyyam986@gmail.com"><i class="fa-solid fa-envelope"></i></a></li> -->
+          <li><a href="https://www.instagram.com/fawzy_avosuahi/"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://github.com/fawziyyah01muhammad/"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container about__container--narrow">
+      <div class="page-section">
+        <h2 class="page-section__title">ABOUT ME</h2>
+          <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
+          <p class="page-section__paragraph">My name is Fawziyyah Muhammad, a professional web-developer</p>
+          <div class="row gutters-80">
+            <div class="col-md-4">
+              <div class="about__image">
+                <img src="assets/images/ziyyah..__2_-removebg-preview.png" alt="">
+              </div>
+            </div>
+            <div class="col-md-8 about__content">
+              <p class="about__description">I am a member of Abocoders Minna Acedemy. My 
+                 journey into tech  all started through a call from a friend immediately I finished my Secondary school in Hilltop model school.
+                 Before then, I always dream of becoming a Medical doctor but after the whole journey in tech I can boldly call myself a software engineer.
+                 I am an aspired writer,from started writing short stories when
+                 I was 11. I decided to start creating short stories on my own because reading is my hobby and my Mum supported 
+                 by by enrolling me in an ART CENTER where I can learn how write stories and poems.
+                </p>
+              <div class="row row--margin-top">
+                <div class="col-md-4">
+                  <p class="about__bio"><strong>NAME :</strong> Fawziyyah Muhammad</p>
+                  <p class="about__bio"><strong>AGE :</strong> 18</p>
+                </div>
+                <div class="col-md-4">
+                  <p class="about__bio"><strong>JOB TITLE :</strong>Web designer</p>
+                  <p class="about__bio"><strong>LOCATION :</strong>Nigeria </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <a class="button button--colorful button--margin" href="#">DOWNLOAD CV</a>
+                </div>
+                <div class="col-md-4">
+                  <a class="button button--colorful button--margin" href="#">HIRE ME</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skill skill--bg">
+    <div class="container skill__container--narrow">
+      <div class="page-section">
+        <h2 class="page-section__title page-section__title--white">MY SKILL</h2>
+        <img class="page-section__title-style" src="assets/images/title-style-white.png" alt="">
+        <p class="page-section__paragraph page-section__paragraph--white">Skills I am good in</p>
+        <div class="row gutters-60">
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/HTML.png" alt="">
+              <h4 class="skill__single-part__title">HTML</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #7FB7FA;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/CSS.png" alt="">
+              <h4 class="skill__single-part__title">CSS</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #7FB7FA;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/WordPress.png" alt="">
+              <h4 class="skill__single-part__title">WORDPRESS</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #7FB7FA;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service">
+    <div class="container">
+      <div class="page-section">
+        <h2 class="page-section__title">MY SERVICES</h2>
+        <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
+        <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="row gutters-70">
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/website-design.png" alt="">
+              <h4 class="service__single-section__title">SHORT STORIES</h4>
+              <p class="service__single-section__paragraph">short stories refers to a brief fictional prose narrative that is shorter than a novel and that usually
+                 deals with only a few characters. It normally comes with images that describes the pages</p>
+                
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/logo-design.png" alt="">
+              <h4 class="service__single-section__title">WEBSITE DESIGN</h4>
+              <p class="service__single-section__paragraph">Web design is all about coding with Html, Css and JavaScript for designing website
+                where you can share your information and host it on internet that can easily by you even on your mobile device. </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/support.png" alt="">
+              <h4 class="service__single-section__title">CATERING</h4>
+              <p class="service__single-section__paragraph">While UI generally deal with the interaction
+                between users and computer systems, software and application, UX deals more
+                 generally with a user's overallexperience with a brand, product or service. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="overview overview--bg">
+    <div class="container">
+      <div class="page-section">
+        <div class="row gutters-140">
+        <div class="col-xs-6 col-lg-3 overview__single-section">
+          <i class="material-icons">headset_mic</i>
+          <h2 class="overview__single-section__number">220</h2>
+          <p class="overview__single-section__title">Hand to Work</p>
+        </div>
+        <div class="col-xs-6 col-lg-3 overview__single-section">
+          <i class="material-icons">mood</i>
+          <h2 class="overview__single-section__number">530</h2>
+          <p class="overview__single-section__title">Happy Client</p>
+        </div>
+        <div class="col-xs-6 col-lg-3 overview__single-section">
+          <i class="material-icons">assignment_turned_in</i>
+          <h2 class="overview__single-section__number">780</h2>
+          <p class="overview__single-section__title">Finished Project</p>
+        </div>
+        <div class="col-xs-6 col-lg-3 overview__single-section">
+          <i class="material-icons">local_bar</i>
+          <h2 class="overview__single-section__number">970</h2>
+          <p class="overview__single-section__title">Cups of coffe</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="portfolio">
+    <div class="container">
+      <div class="page-section">
+        <h2 class="page-section__title">MY PORTFOLIO</h2>
+        <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
+        <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <!-- <div class="portfolio__button-group">
+          <a class="button button--default" data-filter="all" href="#">ALL</a>
+          <a class="button button--default" data-filter=".category-a" href="#">WEBPAGES</a>
+          <a class="button button--default" data-filter=".category-b" href="#">APPS</a>
+          <a class="button button--default" data-filter=".category-c" href="#">WEBSITES</a>
+          <a class="button button--default" data-filter=".category-d" href="#">JAVA</a>
+        </div> -->
+        <div class="row gutters-40">
+          <div class="col-md-4">
+            <div class="portfolio__single-section mix category-a category-b category-c" data-order="1">
+              <img class="portfolio__single-section__image img-responsive" src="assets/images/galaxy.jpeg" alt="">
+              <div class="portfolio__single-section__overlay">
+                <div class="overlay-content">
+                  <h4>Website design</h4>
+                  <p>Designer</p>
+                </div>
+                <div class="portfolio__single-section__search-icon">
+                  <a href=" https://fawziyyah01muhammad.github.io/Galaxy-crypto/"><img src="assets/images/search-icon.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio__single-section mix category-a category-c" data-order="2">
+              <img class="portfolio__single-section__image img-responsive" src="assets/images/qr-code.jpeg" alt="">
+              <div class="portfolio__single-section__overlay">
+                <div class="overlay-content">
+                  <h4>Website design</h4>
+                  <p>Designer</p>
+                </div>
+                <div class="portfolio__single-section__search-icon">
+                  <a href="https://fawziyyah01muhammad.github.io/qr-code-component-main/"><img src="assets/images/search-icon.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio__single-section mix category-c" data-order="3">
+              <img class="portfolio__single-section__image img-responsive" src="assets/images/nth-preview.jpeg" alt="">
+              <div class="portfolio__single-section__overlay">
+                <div class="overlay-content">
+                  <h4>Website design</h4>
+                  <p>Designer</p>
+                </div>
+                <div class="portfolio__single-section__search-icon">
+                  <a href="https://fawziyyah01muhammad.github.io/nft-preview-card-component-main/"><img src="assets/images/search-icon.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row gutters-40">
+          <div class="col-md-4">
+            <div class="portfolio__single-section mix category-b category-d" data-order="4">
+              <img class="portfolio__single-section__image img-responsive" src="assets/images/sunnyside.jpeg" alt="">
+              <div class="portfolio__single-section__overlay">
+                <div class="overlay-content">
+                  <h4>Website design</h4>
+                  <p>designer</p>
+                </div>
+                <div class="portfolio__single-section__search-icon">
+                  <a href="#"><img src="assets/images/search-icon.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio__single-section mix category-b category-d" data-order="5">
+              <img class="portfolio__single-section__image img-responsive" src="assets/images/eshopper.jpeg" alt="">
+              <div class="portfolio__single-section__overlay">
+                <div class="overlay-content">
+                  <h4>Website design</h4>
+                  <p>Designer</p>
+                </div>
+                <div class="portfolio__single-section__search-icon">
+                  <a href="#"><img src="assets/images/search-icon.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio__single-section mix category-d" data-order="6">
+              <img class="portfolio__single-section__image img-responsive" src="assets/images/hsp.jpeg" alt="">
+              <div class="portfolio__single-section__overlay">
+                <div class="overlay-content">
+                  <h4>Website design</h4>
+                  <p>Designer</p>
+                </div>
+                <div class="portfolio__single-section__search-icon">
+                  <a href="#"><img src="assets/images/search-icon.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row gutters-40">
+          <div class="col-md-4">
+            <div class="portfolio__single-section mix category-b category-d" data-order="4">
+              <img class="portfolio__single-section__image img-responsive" src="assets/images/desktop-design-theme-1.jpg" alt="">
+              <div class="portfolio__single-section__overlay">
+                <div class="overlay-content">
+                  <h4>Website design</h4>
+                  <p>designer</p>
+                </div>
+                <div class="portfolio__single-section__search-icon">
+                  <a href="https://fawziyyah01muhammad.github.io/calculator-app-main/"><img src="assets/images/search-icon.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio__single-section mix category-b category-d" data-order="5">
+              <img class="portfolio__single-section__image img-responsive" src="assets/images/desktop-design-theme-2.jpg" alt="">
+              <div class="portfolio__single-section__overlay">
+                <div class="overlay-content">
+                  <h4>Website design</h4>
+                  <p>Designer</p>
+                </div>
+                <div class="portfolio__single-section__search-icon">
+                  <a href="https://fawziyyah01muhammad.github.io/calculator-app-main/index%202.html"><img src="assets/images/search-icon.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio__single-section mix category-d" data-order="6">
+              <img class="portfolio__single-section__image img-responsive" src="assets/images//desktop-design-theme-3.jpg" alt="">
+              <div class="portfolio__single-section__overlay">
+                <div class="overlay-content">
+                  <h4>Website design</h4>
+                  <p>Designer</p>
+                </div>
+                <div class="portfolio__single-section__search-icon">
+                  <a href="https://fawziyyah01muhammad.github.io/calculator-app-main/index%203.html"><img src="assets/images/search-icon.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="slider slider--bg">
+    <div id="myCarousel" class="carousel container slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="carousel-content">
+            <div class="">
+              <div class="text-center">
+                <img src="assets/images/me.png" alt="">
+                <h4>Fawziyyah Muhammad</h4>
+                <h6>Developer</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+                <div class="rating">
+                  <ul>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="carousel-content">
+            <div class="">
+              <div class="text-center">
+                <img class="carousel-person-image" src="assets/images/team-2.png" alt="">
+                <h4>Mary Victor</h4>
+                <h6>Designer</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+                <div class="rating">
+                  <ul>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="carousel-content">
+            <div class="">
+              <div class="text-center">
+                <img class="carousel-person-image" src="assets/images/team-3.png" alt="">
+                <h4>Aisha salihu baba</h4>
+                <h6>Developer</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+                <div class="rating">
+                  <ul>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="team">
+    <div class="container">
+      <div class="page-section">
+        <h2 class="page-section__title">MY TEAM</h2>
+        <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
+        <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="row gutters-40">
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail">
+              <img class="img-responsive" src="assets/images/team-1.png" alt="">
+              <h4 class="team__single-section__name">VIOLET R. PETERS</h4>
+              <p class="team__single-section__title">FOUNDER</p>
+
+              <div class="team__overlay">
+                <div class="team__overlay__content">
+                  <div class="team__single-section--backPage">
+                    <h4 style="padding-left: 0;" class="team__single-section__name">VIOLET R. PETERS</h4>
+                    <p style="padding-left: 0;" class="team__single-section__title">FOUNDER</p>
+                    <p class="team__single-section--backPage__title">Adobe Photoshop <span class="team__single-section--backPage__percent90">90&#37;</span></p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width:90%;background-color: #7F56FD;">
+                        <span class="progress-bar--dot-main"></span>
+                        <span class="progress-bar--dot"></span>
+                      </div>
+                    </div>
+                    <p class="team__single-section--backPage__title">Adobe Illustrator <span class="team__single-section--backPage__percent80">80&#37;</span></p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width:80%;background-color: #7F56FD;">
+                        <span class="progress-bar--dot-main"></span>
+                        <span class="progress-bar--dot"></span>
+                      </div>
+                    </div>
+                    <p class="team__single-section--backPage__title">After Effect <span class="team__single-section--backPage__percent70">70&#37;</span></p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width:70%;background-color: #7F56FD;">
+                        <span class="progress-bar--dot-main"></span>
+                        <span class="progress-bar--dot"></span>
+                      </div>
+                    </div>
+                    <hr style="border: 0;border-bottom: 1px solid #ECEFF1;display:block;padding-top: 45px;">
+               c      <div class="social-icons">
+                      <ul>
+                        <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
+                        <li><a href="#"><i class="flaticon-twitter-logo"></i></a></li>
+                        <li><a href="#"><i class="flaticon-dribbble-logo"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail">
+              <img src="assets/images/team-3.png" alt="">
+              <h4 class="team__single-section__name">PAULA R. MULLINS</h4>
+              <p class="team__single-section__title">FOUNDER</p>
+              <div class="team__overlay">
+                <div class="team__overlay__content">
+                  <div class="team__single-section--backPage">
+                    <h4 style="padding-left: 0;" class="team__single-section__name">PAULA R. MULLINS</h4>
+                    <p style="padding-left: 0;" class="team__single-section__title">FOUNDER</p>
+                    <p class="team__single-section--backPage__title">Adobe Photoshop <span class="team__single-section--backPage__percent90">90&#37;</span></p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width:90%;background-color: #7F56FD;">
+                        <span class="progress-bar--dot-main"></span>
+                        <span class="progress-bar--dot"></span>
+                      </div>
+                    </div>
+                    <p class="team__single-section--backPage__title">Adobe Illustrator <span class="team__single-section--backPage__percent80">80&#37;</span></p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width:80%;background-color: #7F56FD;">
+                        <span class="progress-bar--dot-main"></span>
+                        <span class="progress-bar--dot"></span>
+                      </div>
+                    </div>
+                    <p class="team__single-section--backPage__title">After Effect <span class="team__single-section--backPage__percent70">70&#37;</span></p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width:70%;background-color: #7F56FD;">
+                        <span class="progress-bar--dot-main"></span>
+                        <span class="progress-bar--dot"></span>
+                      </div>
+                    </div>
+                    <hr style="border: 0;border-bottom: 1px solid #ECEFF1;display:block;padding-top: 45px;">
+                    <div class="social-icons">
+                      <ul>
+                        <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
+                        <li><a href="#"><i class="flaticon-twitter-logo"></i></a></li>
+                        <li><a href="#"><i class="flaticon-dribbble-logo"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail">
+              <img src="assets/images/team-2.png" alt="">
+              <h4 class="team__single-section__name">LEONARD D. DOWNING</h4>
+              <p class="team__single-section__title">FOUNDER</p>
+              <div class="team__overlay">
+                <div class="team__overlay__content">
+                  <div class="team__single-section--backPage">
+                    <h4 style="padding-left: 0;" class="team__single-section__name">LEONARD D. DOWNING</h4>
+                    <p style="padding-left: 0;" class="team__single-section__title">FOUNDER</p>
+                    <p class="team__single-section--backPage__title">Adobe Photoshop <span class="team__single-section--backPage__percent90">90&#37;</span></p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width:90%;background-color: #7F56FD;">
+                        <span class="progress-bar--dot-main"></span>
+                        <span class="progress-bar--dot"></span>
+                      </div>
+                    </div>
+                    <p class="team__single-section--backPage__title">Adobe Illustrator <span class="team__single-section--backPage__percent80">80&#37;</span></p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width:80%;background-color: #7F56FD;">
+                        <span class="progress-bar--dot-main"></span>
+                        <span class="progress-bar--dot"></span>
+                      </div>
+                    </div>
+                    <p class="team__single-section--backPage__title">After Effect <span class="team__single-section--backPage__percent70">70&#37;</span></p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width:70%;background-color: #7F56FD;">
+                        <span class="progress-bar--dot-main"></span>
+                        <span class="progress-bar--dot"></span>
+                      </div>
+                    </div>
+                    <hr style="border: 0;border-bottom: 1px solid #ECEFF1;display:block;padding-top: 45px;">
+                    <div class="social-icons">
+                      <ul>
+                        <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
+                        <li><a href="#"><i class="flaticon-twitter-logo"></i></a></li>
+                        <li><a href="#"><i class="flaticon-dribbble-logo"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail">
+              <img src="assets/images/team-3.png" alt="">
+              <h4 class="team__single-section__name">PAULA R. MULLINS</h4>
+              <p class="team__single-section__title">FOUNDER</p>
+              <div class="team__overlay">
+                <div class="team__overlay__content">
+                  <div class="team__single-section--backPage">
+                    <h4 style="padding-left: 0;" class="team__single-section__name">PAULA R. MULLINS</h4>
+                    <p style="padding-left: 0;" class="team__single-section__title">FOUNDER</p>
+                    <p class="team__single-section--backPage__title">Adobe Photoshop <span class="team__single-section--backPage__percent90">90&#37;</span></p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width:90%;background-color: #7F56FD;">
+                        <span class="progress-bar--dot-main"></span>
+                        <span class="progress-bar--dot"></span>
+                      </div>
+                    </div>
+                    <p class="team__single-section--backPage__title">Adobe Illustrator <span class="team__single-section--backPage__percent80">80&#37;</span></p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width:80%;background-color: #7F56FD;">
+                        <span class="progress-bar--dot-main"></span>
+                        <span class="progress-bar--dot"></span>
+                      </div>
+                    </div>
+                    <p class="team__single-section--backPage__title">After Effect <span class="team__single-section--backPage__percent70">70&#37;</span></p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width:70%;background-color: #7F56FD;">
+                        <span class="progress-bar--dot-main"></span>
+                        <span class="progress-bar--dot"></span>
+                      </div>
+                    </div>
+                    <hr style="border: 0;border-bottom: 1px solid #ECEFF1;display:block;padding-top: 45px;">
+                    <div class="social-icons">
+                      <ul>
+                        <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
+                        <li><a href="#"><i class="flaticon-twitter-logo"></i></a></li>
+                        <li><a href="#"><i class="flaticon-dribbble-logo"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="brand-logo brand-logo--bg">
+    <div class="container">
+      <div class="row">
+        <div class="brand-logo__wrapper">
+          <li><img class="img-responsive" src="assets/images/brand-1.png" alt=""></li>
+          <li><img class="img-responsive" src="assets/images/brand-2.png" alt=""></li>
+          <li><img class="img-responsive" src="assets/images/brand-3.png" alt=""></li>
+          <li><img class="img-responsive" src="assets/images/brand-4.png" alt=""></li>
+          <li><img class="img-responsive" src="assets/images/brand-1.png" alt=""></li>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="blog">
+    <div class="container">
+      <div class="page-section">
+        <h2 class="page-section__title">BLOG POST</h2>
+        <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
+        <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="row gutters-40">
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img class="img-responsive" src="assets/images/blog-1.png" alt="">
+              <p class="blog__single__date">MAY 25 , 2017 </p>
+              <i class="material-icons">comment</i> 5
+              <a href="#"><h4 class="blog__single__title">HEADLINE LATEST WORLD NEWS</h4></a>
+              <p class="blog__single__paragraph">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  Ut enim ad minim veniam <a href="#"><span class="blog__single__paragraph--read-more">READ MORE...</span></a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/blog-2.png" alt="">
+              <p class="blog__single__date">MAY 25 , 2017 </p>
+              <i class="material-icons">comment</i> 5
+              <a href="#"><h4 class="blog__single__title">HEADLINE LATEST WORLD NEWS</h4></a>
+              <p class="blog__single__paragraph">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  Ut enim ad minim veniam <a href="#"><span class="blog__single__paragraph--read-more">READ MORE...</span></a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/blog-3.png" alt="">
+              <p class="blog__single__date">MAY 25 , 2017 </p>
+              <i class="material-icons">comment</i> 5
+              <a href="#"><h4 class="blog__single__title">HEADLINE LATEST WORLD NEWS</h4></a>
+              <p class="blog__single__paragraph">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  Ut enim ad minim veniam <a href="#"><span class="blog__single__paragraph--read-more">READ MORE...</span></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
 
-	</ul>
-	</nav>
-     <div class="hero-image">
-  <div class="hero-text">
-    <p style="font-size:25px"><b>Hello I'm</b></p>
-    <h1 style="font-size:45px"><b>FAWZIYYAH MUHAMMAD</b></h1>
-    <p style="font-size: 25px"><b>Professional Web Developer</b></p>
-</div>
-</div>
-	<div class="wrapper">
-<!-- <div id="main">
-  <div style="background-color: white; color: white"></div>
-  <div><h1 style="font-size: 20px"><b>226</b></h1><p style="font-size: 15px"><b> project completes</b></p>
-</div>
-<div><h1 style="font-size: 20px"><b>435</b></h1><p style="font-size: 15px;"><b>web development</b></p>
-  </div>
-    <div><p style="text-align:center; font-size: 20px"><b>ABOUT</b></p>
-      <h1 style="text-align: center; font-size: 50px"><b>A few words</b></h1></div>
-      <div style="background-color: white; color: white"></div>
-    </div> -->
-  
-</div>
-<div id="footer">
-  Copyright@fauziyyam986.com 2021
-</div>
+<!-- resume Section
+   ================================================== -->
+   <section id="resume" class="grey-section">
 
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Resume</h5>
+   			<h1>More of my credentials.</h1>
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<!-- <div class="timeline-block">
+
+	   				<div class="timeline-ico">
+              <i class="fa-solid fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>UI Designer</h3>
+	   					<p>July 2015 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Awesome Studio</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+	   				</div>
+
+	   			</div>  -->
+          <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+              <i class="fa-solid fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Front-end Developer</h3>
+	   					<p>january 2022 - July 2022</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Abocoders Minna Acedemy</h4>
+	   					<p>An Africa of young active citizens maximising opportunities to foster economics  progress thereby giving rise to free afican continent.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Web Designer</h3>
+	   					<p>October 2021 - December 2021</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Abocoders Minna Acedemy</h4>
+	   					<p>An Africa of young active citizens maximising opportunities to foster economics progress thereby giving rise to free afican continent.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Education</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3> Degree</h3>
+	   					<p>september 2021 - Present </p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Abocoders Minna Acedemy</h4>
+	   					<p>An Africa of young active citizens maximising opportunities to foster economics progress thereby giving rise to free afican continent.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>SSCE</h3>
+	   					<p>April 2016 - september 2021</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Hilltop Model school</h4>
+	   					<p>I graduated from HillTop Model school On 30th of september 2021, I started hilltop model school from my JSS1 till my SS3. Hilltop Model school is a very nice school there are well qualified teachers, Good water supply and Good classrooms. </p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Primary certificate</h3>
+	   					<p>September 2010 - July 2015</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Genesis Comprehensive school</h4>
+	   					<p>I graduated from HillTop Model school On 30th of september 2021, I started Genesis Comprehensive school from my nursery 1 till my Primary 6. Genesis comprhensive school is a very nice school there are well qualified teachers, Good water supply and Good classrooms.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+		
+	</section> <!-- /features -->
+
+
+  <footer class="footer footer--bg">
+    <div class="container text-center">
+      <h1 class="footer__title">ziyyah</h1>
+      <ul class="footer__contact-information">
+        <li><a href="tel:07035106062"><i class="material-icons">phone</i>(+234) 070 3510 6062</a></li>
+        <li><a href="mailto:fauziyyam986@gmail.com"><i class="material-icons">email</i> fauziyyam986@gmail.com</a></li>
+        <li><a href="tel:07035106062"><i class="fa-brands fa-whatsapp" style="padding-right:10px;"></i> 070 3510 6062</a></li>
+        <li><a href="#"><i class="material-icons">location_on</i>Ikon Allah plaza</a></li>
+      </ul>
+    </div>
+    <hr style="border: 0;border-top: 1px solid #525B60;display:block;margin-top: 40px;">
+    <div class="container text-center">
+      <div class="social-icon">
+        <ul>
+          <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-twitter-logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-behance-logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-dribbble-logo"></i></a></li>
+        </ul>
+      </div>
+      <p class="footer__paragraph">Copyright &copy; 2017 DartThemes , All Rights Reserved.</p>
+    </div>
+  </footer>
+</div>
+  <script src="assets/jquery/jquery-3.2.1.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/mixitup.js"></script>
+
+  <script>
+    // $('a').click(function(e)
+    //   {
+    //     e.preventDefault();
+    //   });
+
+    // calling mixitup
+    var mixer = mixitup(".portfolio");
+  </script>
 </body>
-</html>
+</html>  
