@@ -26,8 +26,8 @@ body{
 
 @media (min-width: 1400px) {
   .container{
-    width:100%;
-    margin:0;
+    width:1370px;
+    margin: 0;
   }
 }
 
@@ -976,10 +976,10 @@ html,body {
 }
 
 .main-footer{
-  width: 100%;
-  background-color: rgba(22, 21, 22, 0.983);
+  background-color: rgba(22, 21, 22, 0.885);
   margin: 0;
-  padding: 20px;
+  padding: 20px 0;
+  display: block;
 }
 /* .footer{
   padding-top: 50px;
