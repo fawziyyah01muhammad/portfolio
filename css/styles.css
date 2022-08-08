@@ -975,7 +975,13 @@ html,body {
   }
 }
 
-.footer{
+.main-footer{
+  width: 100%;
+  background-color: rgba(22, 21, 22, 0.983);
+  margin: 0;
+  padding: 20px;
+}
+/* .footer{
   padding-top: 50px;
   padding-bottom: 50px;
   margin:0;
@@ -984,7 +990,7 @@ html,body {
 .footer--bg{
   background-color: rgba(22, 21, 22, 0.9);
  background-size: cover;
-}
+} */
 
 .footer__title{
   font-size: 30px;
