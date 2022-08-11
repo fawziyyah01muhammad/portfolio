@@ -1432,7 +1432,20 @@ color: rgb(33, 33, 33) ;
 .skill-bars li .percent100 { width: 100%; }
 
 
-
+@media (max-width:958px){
+  .cv-row{
+    flex-direction: column;
+  }
+  .cv{
+    margin: 20px 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .cv-col{
+    flex-direction: 100%;
+    width: 100%;
+  }
+}
 
 
 
