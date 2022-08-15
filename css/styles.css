@@ -243,6 +243,12 @@ html,body {
   line-height: 1.8;
 }
 
+.gutters-20.row{
+  display: flex;
+  gap:35px;
+  margin: 0;
+  padding: 0;
+}
 .about__container--narrow{
   max-width: 1245px;
   margin-right: auto;
@@ -258,11 +264,10 @@ html,body {
   color: #636262;
   padding-bottom: 25px;
   padding:0 50px;
-  display: block;
 }
 
-.about__image{
- margin-right: 10px;
+.about__image img{
+ margin-left: -45px;
 }
 @media screen and (min-width:270px) and (max-width:361px){
   .about__description{
@@ -496,6 +501,7 @@ html,body {
 .gutters-60.row{
   margin-right: -60px;
   margin-left: -30px;
+  display: flex;
 }
 
 .gutters-60 > [class^="col-"], .gutters-60 > [class^="col-"]{
@@ -817,7 +823,7 @@ html,body {
   opacity: 0;
   -webkit-transition: .3s ease;
   transition: .3s ease;
-  background-color: #fff;
+  background-color: rgba(181, 47, 168, 0.462);
   border-radius: 10px;
 }
 
