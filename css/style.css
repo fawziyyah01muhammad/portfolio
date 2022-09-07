@@ -13,20 +13,26 @@
 }
 nav{
     display: flex;
-padding: 2% 6%;
+padding: 2%;
 align-items: center;
 justify-content: space-between;
+position: fixed;
+background-color:rgba(9, 4, 4, 0.286) ;
+width: 100%;
 }
 nav a{
     text-decoration: none;
     color: white;
     font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;  
 }
 .nav-links{
     flex: 1;
     text-align: right;
 
+}
+.nav-links ul{
+    padding-right:30px ;
 }
 .nav-links ul li{
     text-align: right;
@@ -38,7 +44,6 @@ nav a{
 }
 .nav-links ul li a{
     text-decoration: none;
-    color: white;
     font-size: 15px;
 }
 .nav-links ul li::after{
@@ -56,10 +61,8 @@ transition: 0.5s;
 .text-box{
 	width: 90%;
 	color: white;
-	position: absolute;
-	top: 65%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+    justify-content: center;
+	padding-top: 150px;
 	text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -113,9 +116,13 @@ transition: 0.5s;
         color: #fff;
   font-size: 30px;
     } */
-    @media(max-width: 958px){
+    @media screen and (max-width: 601px) and (min-width:270px){
+        .header{
+            height: 100%;
+        }
         .text-box h1{
-            font-size: 25px;
+            font-size: 20px;
+            text-align:center;
         }
         .text-box p{
             font-size: 10px;
@@ -148,9 +155,22 @@ transition: 0.5s;
         }
     }
 
+    @media screen and (min-width: 602px) and (max-width:1000px){
+        .header{
+            height: 100%;
+        }
+.text-box h1{
+            font-size: 50px;
+            text-align:center;
+        }
+        .text-box p{
+            font-size: 25px;
+        }
+    }
+
 .about{
     margin: 0;
-    padding: 30px 0;
+    padding: 70px 0 0 0;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #273f59;
@@ -194,7 +214,7 @@ width: 100%;
     color:white;
 }
 .skills h2{
-    margin: 10px;
+    margin:50px 10px 0 10px;
     font-size: 50px;
  }
  .skills p{ 
@@ -227,13 +247,13 @@ color: #273f59;
 
 
 .services{
-    padding: 50px;
+    padding: 50px 50px 0 50px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 .services h1{
-    margin: 10px;
+    margin:50px 10px 10px  10px;
     font-size: 50px;
     color: #273f59;
  }
@@ -268,13 +288,13 @@ color: #273f59;
 
 
 .portfolio{
-    padding: 50px;
+    padding: 50px 50px 0 50px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 .portfolio h1{
-    margin: 10px;
+    margin:50px 10px 10px 10px;
     font-size: 45px;
     color: #273f59;
     letter-spacing:-2px;
@@ -294,8 +314,10 @@ color: #273f59;
     box-shadow: 0 0 10px 0 lightgrey;
     padding: 0px;
     flex-basis: 31%;
+}
+.img-container{
+    overflow: auto;
     position: relative;
-	overflow: hidden;
     background-color: transparent;
 }
 
@@ -344,19 +366,43 @@ color: #273f59;
     text-align: center;
     color: azure;
     padding: 30px 0;
+    margin-top: 50px;
+}
+.footer-col{
+	flex-basis: 48%;
+}
+.footer h1{
+    padding-bottom: 10px;
+}
+.footer-row{
+    display: flex;
+    justify-content: space-around;
+   width: 80%;
+   margin: auto;
+   margin-top: 20px;
 }
 .footer ul{
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin: 50px 0 20px 0;
+   text-align: justify;
+   
 }
 .footer ul li{
     list-style: none;
-    font-size: 18px;
+    padding: 20px 0;
+    font-size: 30px;
 }
 .footer i{
     padding-right: 5px;
+}
+
+.footer-col input, .footer-col textarea{
+	width: 70%;
+	padding: 15px;
+	margin-bottom: 17px;
+	outline: none;
+	border: 1px solid #ccc;
+    color: white;
+	box-sizing: border-box;
+    background-color: transparent;
 }
 
 @media(max-width:958px){
@@ -377,13 +423,37 @@ color: #273f59;
     .skills-row{
         flex-direction: column;
     }
+    .skills h2{
+        font-size: 29px;
+    }
+    .skills p{
+        font-size: 15px;
+    }
     .services-row{
         flex-direction: column;
+    }
+    .services h1{
+        font-size: 29px;
+    }
+    .services p{
+        font-size: 15px;
     }
     .portfolio-row{
         flex-direction: column;
     }
-    .footer ul{
+    .portfolio h1{
+        font-size: 29px;
+    }
+    .portfolio p{
+        font-size: 15px;
+    }
+    .footer-row{
 flex-direction: column;
     }
+    .footer ul li{
+        font-size: 20px;
+    }
 }
+
+
+

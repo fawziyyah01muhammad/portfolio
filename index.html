@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +8,31 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Fawziyyah</title>
 </head>
-<body>
-    <section class="header">
-        <nav>
+<body id="top">
+    <section id="intro" class="header">
+        <div class="top-bar">
+        <nav id="main-nav-wrap">
             <a href="index.html">Portfolio</a>
         <div class="nav-links">
-            <ul>
+            <ul class="main-navigation">
                 <div class="nav-links" Id="checkmenu">
                     <i class="fa fa-times" onclick ="hideMenu()"></i>          
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="courses.html">COURSES</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a class="smoothscroll" href="#intro" title="">HOME</a></li>
+                <li><a class="smoothscroll" href="#about" title="">ABOUT</a></li>
+                <li><a class="smoothscroll" href="#skills" title="">SKILLS</a></li>
+                <li><a class="smoothscroll" href="#services" title="">SERVICES</a></li>
+                <li><a class="smoothscroll" href="#portfolio" title="">PORTFOLIO</a></li>
+                <li><a class="smoothscroll" href="#contact" title="">CONTACT</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick ="showMenu()"></i>
         </nav>
+        </div>
         <div class="text-box">
             <h1>Hello</h1>
         <h1>I'm Fawziyyah Muhammad</h1>
         <p>WRITER WEB-DEVELOPER CATERER</p>
-    <a href="" class="hero-btn">DOWNLOAD CV</a>
+    <a href="./resume.pdf" class="hero-btn">DOWNLOAD CV</a>
    
 
     <div class="social">
@@ -41,7 +45,7 @@
     </div>
     </section>
 
-<section class="about">
+<section id="about" class="about">
 
         <h2>ABOUT ME</h2>
           <p>My name is Fawziyyah Muhammad, a professional web-developer</p>
@@ -61,7 +65,7 @@
         </div>
 </section>
 
-<section class="skills">
+<section id="skills" class="skills">
     <h2>MY SKILLS</h2>
     <p>Here are the skills am highly qualified on</p>
 <div class="skills-row">
@@ -84,7 +88,7 @@
 </div>
 </section>
 
-<section class="services">
+<section id="services" class="services">
     <h1>MY SERVICES</h1>
     <p>These are the services I can render to people</p>
 <div class="services-row">
@@ -109,11 +113,12 @@ aircraft, cruise ship, park, filming site or studio, entertainment site, or even
 </div>
 </section>
 
-<section class="portfolio">
+<section id="portfolio" class="portfolio">
     <h1>MY PORTFOLIO</h1>
     <p>These are the projects I have done so far and am trying my best to do more</p>
 <div class="portfolio-row">
 <div class="portfolio-col">
+    <div class="img-container">
           <img src="assets/images/sunnyside.jpeg" alt="">
             <div class="layer">
                 <div class="layer-text">
@@ -124,7 +129,9 @@ aircraft, cruise ship, park, filming site or studio, entertainment site, or even
        </div>
     </div>
 </div>
+</div>
 <div class="portfolio-col">
+    <div class="img-container">
     <img class="portfolio__single-section__image img-responsive" src="assets/images/hsp.jpeg" alt="">
       <div class="layer">
           <div class="layer-text">
@@ -135,7 +142,9 @@ aircraft, cruise ship, park, filming site or studio, entertainment site, or even
  </div>
 </div>
 </div>
+</div>
 <div class="portfolio-col">
+    <div class="img-container">
     <img class="portfolio__single-section__image img-responsive" src="assets/images/eshopper.jpeg" alt="">
             <div class="layer">
                 <div class="layer-text">
@@ -147,10 +156,12 @@ aircraft, cruise ship, park, filming site or studio, entertainment site, or even
     </div>
 </div>
 </div>
+</div>
 
 
 <div class="portfolio-row">
     <div class="portfolio-col">
+    <div class="img-container">
         <img class="portfolio__single-section__image img-responsive" src="assets/images/galaxy.jpeg" alt="">
                 <div class="layer">
                     <div class="layer-text">
@@ -160,8 +171,10 @@ aircraft, cruise ship, park, filming site or studio, entertainment site, or even
                   </p>
            </div>
         </div>
+        </div>
     </div>
     <div class="portfolio-col">
+    <div class="img-container">
         <img class="portfolio__single-section__image img-responsive" src="assets/images/calculator.jpeg" alt="">
           <div class="layer">
               <div class="layer-text">
@@ -172,7 +185,9 @@ aircraft, cruise ship, park, filming site or studio, entertainment site, or even
      </div>
     </div>
     </div>
+    </div>
     <div class="portfolio-col">
+    <div class="img-container">
         <img class="portfolio__single-section__image img-responsive" src="assets/images/to-do.jpeg" alt="">
                 <div class="layer">
                     <div class="layer-text">
@@ -184,21 +199,35 @@ aircraft, cruise ship, park, filming site or studio, entertainment site, or even
         </div>
     </div>
     </div>
+    </div>
 </section>
 
-<section class="footer">
-    <h1>ZIYYAH</h1>
-    <ul>
+<section id="contact" class="footer">
+    <h1>GET IN TOUCH WITH ME</h1>
+    <div class="footer-row">
+    <div class="footer-col">    <ul>
         <li><i class="fa-solid fa-phone"></i> (+234) 070 3510 6062</li>
         <li><i class="fa-solid fa-envelope"></i> fauziyyam986@gmail.com</li>
         <li><i class="fa-brands fa-whatsapp"></i> 070 3510 6062</li>
         <li><i class="fa-solid fa-location-dot"></i> Ikon Allah plaza</li>
     </ul>
+</div>
+<div class="footer-col">
+    <form action="form-handler.php" method="post">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter email address" required>
+        <!-- <input type="text" name="subject" placeholder="Enter your subject" required> -->
+        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="hero-btn red-btn">Send Message</button>
+    </form>
+</div>
+</div>
     <hr style="border: 0;border-top: 1px solid #525B60;display:block;margin-top: 40px;">
+    <p>© copyright - mziyyah 2022</p>
 </section>
 
-
-<script>
+<script src="./assets/bootstrap/js/script.js"></script>
+<!-- <script>
 	var checkmenu = document.getElementById("checkmenu")  
 	function showMenu(){
 		checkmenu.style.right = "0";
@@ -206,6 +235,6 @@ aircraft, cruise ship, park, filming site or studio, entertainment site, or even
 	function hideMenu(){
 		checkmenu.style.right = "-200px";
 	}
-</script>
+</script> -->
 </body>
 </html>
