@@ -146,7 +146,8 @@ transition: 0.5s;
             display:block;
             color:whitesmoke;
             margin: 10px;
-            font-size: 25px;
+            margin-right: 20px;
+            font-size: 35px;
             cursor: pointer; 
         }
         
@@ -317,7 +318,7 @@ color: #273f59;
 }
 .img-container{
     overflow: auto;
-    position: relative;
+    /* position: relative; */
     background-color: transparent;
 }
 
@@ -339,6 +340,7 @@ color: #273f59;
 	top: 0;
 	left: 0;	
 	transition: 0.5s;
+    display: none;
 }
 .layer:hover{
 	background: rgba(244, 235, 235, 0.361);
@@ -422,6 +424,7 @@ color: #273f59;
     }
     .skills-row{
         flex-direction: column;
+        gap: 50px;
     }
     .skills h2{
         font-size: 29px;
@@ -431,6 +434,7 @@ color: #273f59;
     }
     .services-row{
         flex-direction: column;
+        gap: 50px;
     }
     .services h1{
         font-size: 29px;
@@ -440,6 +444,7 @@ color: #273f59;
     }
     .portfolio-row{
         flex-direction: column;
+        gap: 50px;
     }
     .portfolio h1{
         font-size: 29px;
@@ -449,6 +454,7 @@ color: #273f59;
     }
     .footer-row{
 flex-direction: column;
+gap: 50px;
     }
     .footer ul li{
         font-size: 20px;
